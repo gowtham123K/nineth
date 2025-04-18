@@ -13,7 +13,7 @@ pipeline {
                 bat '''
                 python -m venv venv
                 call venv\\Scripts\\activate
-                python -m pip install --upgrade pip
+                C:\\Users\\gowth\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m pip install --upgrade pip
                 pip install pytest
                 '''
             }
@@ -31,7 +31,7 @@ pipeline {
             steps {
                 bat '''
                     call venv\\Scripts\\activate
-                    main.py
+                    C:\\Users\\gowth\\AppData\\Local\\Programs\\Python\\Python313\\python.exe main.py
                     '''
             }
         }
